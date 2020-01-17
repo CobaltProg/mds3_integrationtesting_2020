@@ -46,7 +46,7 @@ it('it should return all colors', () => {
   it('it should ad a new color', () => {
     return chai.request(app)
       .post('/colors')
-      .send(payloadColor('purple'))
+      .send(payloadColor('green'))
       .then((res) => {
         expect(res).to.have.status(201);
         expect(res).to.be.json;
